@@ -1,0 +1,9 @@
+/DB
+/node_modules
+/Other
+carbot.js
+package.json
+package-lock.json
+config.json
+*.txt
+desktop.ini
