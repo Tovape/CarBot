@@ -21,7 +21,7 @@ let length = 0;
 
 //Gets Token
 
-
+client.login("NDc4MjAxMTE1OTg1NDQ0ODY2.DngLqA.LFiMp8IXwtMwlIsAIm59Hqqd6lI");
 
 //Google Search for images | Windows
 
@@ -35,7 +35,6 @@ const google = new Scraper({
 //Google Search for images | Linux
 
 /*
-
 const google = new Scraper({
   puppeteer: {
     headless: false,
@@ -43,17 +42,16 @@ const google = new Scraper({
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   },
 });
-
 */
 
 //Connects to SQL Database in the Linux Server | Windows
 
 const db = mysql.createConnection({
-  host: 'ip-here',
-  port: port here,
-  user: 'user',
-  password: 'password',
-  database: "ddbb"
+  host: 'localhost',
+  port: 3306,
+  user: 'test2',
+  password: 'test2',
+  database: "carbotdb"
 });
 
 //Connects to SQL Database | Linux
@@ -63,8 +61,8 @@ const db = mysql.createConnection({
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password',
-  database: "ddbb"
+  password: 'ireland36',
+  database: "carbotdb"
 });
 
 */
@@ -583,7 +581,7 @@ client.on("message", (message) => {
 
   //View Servers and Total Members
 
-  if (message.content.startsWith(prefix + "")) {
+  if (message.content.startsWith(prefix + "-serverlist")) {
     message.channel.send(`Check console.log | List`)
     console.log("\nCarbot Servers:\n")
     var totalMembers = 0;

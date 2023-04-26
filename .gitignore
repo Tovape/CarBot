@@ -1,10 +1,4 @@
 /DB
 /node_modules
 /Other
-carbot.js
-package.json
-package-lock.json
-config.json
-doc.txt
-Linux.txt
-desktop.ini
+.env

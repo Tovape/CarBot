@@ -1,0 +1,17 @@
+Todo-------
+
+
+Linux-------
+
+Login Mysql:
+
+mysql -uroot -p
+password
+
+SHOW DATABASES - Listing DDBB
+USE carbotdb - Select database
+SHOW TABLES - Listing Tables
+
+Importing:
+
+source /home/pi/Desktop/Carbot/DB/carbot-finish.sql
