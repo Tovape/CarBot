@@ -21,7 +21,7 @@ let length = 0;
 
 //Gets Token
 
-client.login("NDc4MjAxMTE1OTg1NDQ0ODY2.DngLqA.LFiMp8IXwtMwlIsAIm59Hqqd6lI");
+client.login("");
 
 //Google Search for images | Windows
 
@@ -49,8 +49,8 @@ const google = new Scraper({
 const db = mysql.createConnection({
   host: 'localhost',
   port: 3306,
-  user: 'test2',
-  password: 'test2',
+  user: 'root',
+  password: '',
   database: "carbotdb"
 });
 
@@ -61,7 +61,7 @@ const db = mysql.createConnection({
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'ireland36',
+  password: '',
   database: "carbotdb"
 });
 
